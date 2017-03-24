@@ -1,0 +1,13 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#home {
+	height: 50vw;
+	width: 100vw;
+	background: url(fondo-home1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
