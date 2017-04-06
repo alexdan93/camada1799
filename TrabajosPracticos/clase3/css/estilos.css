@@ -1,7 +1,5 @@
 * {
-	margin: 5px;
 	padding: 0;
-	border: 2px solid red;
 }
 
 @font-face {
@@ -23,12 +21,22 @@ a:hover {
 	border-bottom: 2px solid white;
 }
 
+div {
+	padding-top: 70px;
+}
+
+section {
+	display: block;
+}
+
 header {
 	background-color: #4D63EA;
 	margin: 0;
 	padding: 0;
 	position: fixed;
 	width: 100%;
+	top: 0;
+	height: 100px;
 }
 
 header h1 {
@@ -79,6 +87,7 @@ li {
 
 .optionsMenu {
 	display: inline-block;
+	margin: 10px;
 }
 
 .optionsMenu a {
