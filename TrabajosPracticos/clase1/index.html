@@ -1,0 +1,60 @@
+<!-- Maquetar lo que se convertirá en su portafolio de proyectos online. Luego maquetearlo respetando el orden y el contenido de las secciones, SOLO utilizando las etiquetas semánticas de html5(section, article, footer, etc) y las etiquetas básicas vistas en la seción de hoy. -->
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Trabajo Practico Clase 1 - Estructura Portfolio</title>
+		<meta charset="utf-8"/>
+		<style>
+			* { margin: 5px; padding: 5px; }
+			li { display: inline-block; }
+			img { height: 300px; width: 300px; }
+			article { text-align: center; }
+		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Professional Portfolio</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li> <a href="#">My work</a> </li>
+				<li> <a href="#">Contact</a> </li>
+				<li> <a href="#">About</a> </li>
+			</ul>
+		</nav>
+
+		<section>
+
+			<article>
+				<h1>About</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.</p>
+			</article>
+
+			<article>
+				<h1>My work</h1>
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</article>
+
+			<article>
+				<h1>Contact</h1>
+				<form action="">
+					<label for="name">Name: </label>
+					<input type="text" name="name" placeholder="Insert name"><br>
+					<label for="email">Email: </label>
+					<input type="email" name="email" placeholder="mail@domain.com"><br>
+					<textarea name="comments" id="" cols="30" rows="10" placeholder="Insert comments..."></textarea>
+				</form>
+			</article>
+
+		</section>
+
+	</body>
+
+</html>
