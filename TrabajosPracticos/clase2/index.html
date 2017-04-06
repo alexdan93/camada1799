@@ -1,0 +1,87 @@
+<!-- 
+	Descripción:
+		Continuar con la maqueta de nuestro portafolio comenzada en el TP1. En esta oportunidad agregaremos a nuestro portafolio, las listas, tablas con contenido, formularios de contacto y todos los enlaces necesarios que definimos en nuetro markup para nuestro portafolio.
+		Adicional, utilizaremos imagenes tipo, para poder ir ubicando espacialmente las imagenes que luego incorporaremos en nuestra versión final del portafolio.
+	Objetivo:
+		Insertar y familiarisarse con nuevas etiquetas de contenido en nuestro sitio web
+		Incorporar elementos multimedia (video/imagenes) a nuestro portafolio
+		Agregar interacción con el usuario mediante links y formularios.
+ -->
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Trabajo Practico Clase 1 - Estructura Portfolio</title>
+		<meta charset="utf-8"/>
+		<style>
+			* { margin: 5px; padding: 0; }
+			body { background-color: #BEE7F8 }
+			a { text-decoration: none; color: blue; font-size: 20px; }
+			a:hover { border-bottom: 2px solid white; font-size: 24px;}
+			header h1, nav { display: inline-block; }
+			nav { float: right; }
+			li { list-style: none; }
+			nav ul li { display: inline-block; }
+			img { height: 300px; width: 300px; }
+			img:hover { box-shadow: 10px 10px 5px #000000; height: 330px; width: 330px; transition: 1s; }
+			article { text-align: center; padding-top: 20px; padding-bottom: 20px; }
+		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Professional Portfolio</h1>
+			<nav>
+				<ul>
+					<li> <a href="#">My work</a> </li>
+					<li> <a href="#">Contact</a> </li>
+					<li> <a href="#">About</a> </li>
+					<li> <a href="#jokes">Nerd Jokes</a> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<article>
+				<h1>About</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.</p>
+			</article>
+
+			<article>
+				<h1>My work</h1>
+				<img src="img/web_design1.jpg" alt="web_design">
+				<img src="img/web_design2.jpg" alt="web_design">
+				<img src="img/web_design3.jpg" alt="web_design">
+			</article>
+
+			<article>
+				<h1>Contact</h1>
+				<form action="">
+					<label for="name">Name: </label>
+					<input type="text" name="name" placeholder="Insert name"><br>
+					<label for="email">Email: </label>
+					<input type="email" name="email" placeholder="mail@domain.com"><br>
+					<textarea name="comments" id="" cols="30" rows="10" placeholder="Insert comments..."></textarea>
+				</form>
+			</article>
+
+
+			<article id="jokes">
+				<h1>Some Nerd Jokes</h1>
+				<ul>
+					<li> <a href="http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke" target="_blank">What is your best programmer joke?</a> </li>
+					<li> <a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered" target="_blank">What is the best comment in source code you have ever encountered?</a> </li>
+				</ul>
+			</article>
+
+			<footer>
+				Redes sociales
+			</footer>
+
+		</section>
+
+	</body>
+
+</html>
