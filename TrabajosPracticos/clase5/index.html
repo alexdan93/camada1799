@@ -1,0 +1,97 @@
+<!--Descripción:
+		Ya con un poco de estilo en nuestro portafolio, procederemos a ubicar los elementos de la página donde nosotros estimemos conveniente. Ya nuestra página no será una lista interminable si no que podremos darle la forma que diseñamos en la maqueta de la primera clase.
+	Objetivo:
+		Utilizar el modelo de cajas para definir el espacio y dimensiones de nuestras clases y elementos.
+		Utilizar las técnicas de posicionamiento vistas en clases -->
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Trabajo Practico Clase 1 - Estructura Portfolio</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/estilos.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+	</head>
+
+<body>
+
+	<div class="container">
+		<header>
+			<h1 class="header">Alexis D. Diaz Portfolio</h1>
+			<nav class="header menu">
+				<ul>
+					<li class="optionsMenu"> <a href="#work">My work</a> </li>
+					<li class="optionsMenu"> <a href="#about">About</a> </li>
+					<li class="optionsMenu"> <a href="#contact">Contact</a> </li>
+					<li class="optionsMenu"> <a href="#jokes">Nerd Jokes</a> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+
+			<article id="work">
+				<h1 class="title">My work</h1>
+				<div class="myWork">
+					<img src="img/web_design1.jpg" alt="web_design">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit labore rerum, minus numquam, iste nobis reiciendis voluptatum neque ab dolore ipsum ex nisi. Necessitatibus optio incidunt, modi ducimus delectus.</p>
+				</div>
+				<div class="myWork">
+					<img src="img/web_design2.jpg" alt="web_design">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
+				</div>
+				<div class="myWork">
+					<img src="img/web_design3.jpg" alt="web_design">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
+				</div>
+			</article>
+
+			<article id="about">
+				<h1 class="title">About me</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic.</p>
+			</article>
+
+			<article id="contact">
+				<h1 class="title">Contact</h1>
+				<form>
+					<div class="contenedor">
+						<div>
+							<label for="name">Name</label><br>
+							<input type="text" id="name" placeholder="Enter your name here">
+						</div>
+						<div>
+							<label for="email">Email</label><br>
+							<input type="email" id="email" placeholder="Enter your email here">
+						</div>
+						<div>
+							<label for="message">Message</label><br>
+							<textarea name="message" id="" cols="30" rows="10" placeholder="Place your message"></textarea>
+						</div>
+						<div>
+							<button type="submit">Submit</button>
+						</div>
+					</div>
+				</form>
+			</article>
+
+
+			<article id="jokes">
+				<h1 class="title">Some Nerd Jokes</h1>
+				<ul>
+					<li> <a href="http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke" target="_blank">What is your best programmer joke?</a> </li>
+					<li> <a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered" target="_blank">What is the best comment in source code you have ever encountered?</a> </li>
+				</ul>
+			</article>
+
+			<footer>
+				Redes sociales
+			</footer>
+
+		</section>
+	</div>
+
+</body>
+
+</html>
