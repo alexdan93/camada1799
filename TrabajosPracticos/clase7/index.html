@@ -1,20 +1,17 @@
-<!-- 
-	Descripción:
-
-		Es tiempo de comenzar a darle un poco de color y más forma a nuestro portafolio. Aprenderemos a aplicar selectores y clases en nuestro html de forma de poder referenciarlos para estilizarlos por medio de CSS. En este trabajo práctico, incorporaremos el uso de tipografía a nuestro portafolio, así cómo también las diferentes propiedades que tiene un texto.
-
-	Objetivo:
-
-		Incorporar en el archivo HTML, clases de forma de poder utilizarlas posteriormente en el estilo de estas.
-		Crear un archivo .css el cual comience a darle estilos a nuestro portafolio.
-		Poner en practica el uso de tipografías de uso abierto cómo lo son google fonts y font squirl.
- -->
+<!--Descripción:
+	Construye tu propio portfolio con los siguientes elementos:
+    - Logo
+    - Menu con iconos linkeadas a tus redes sociales, no olvides de incluir linkedin y github
+    - Sección con tu foto y una descripción concreta de lo que haces.
+    - Demuestra tus trabajos y habilidades. Crea una galería con tus tabajos, recuerda que tu portfolio es la puerta de entrada a tu trabajo creativo, pero no lo sobrecargues de información.
+    - Formulario de contacto con un call-to-action para atraer futuros clientes.
+-->
 <!DOCTYPE html>
 
 <html>
 
 	<head>
-		<title>Trabajo Practico Clase 3 - CSS Parte 1</title>
+		<title>Trabajo Practico Clase 6 - Github & Responsive Design</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/estilos.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -23,24 +20,20 @@
 
 <body>
 
-	<div>
+	<div class="container">
 		<header>
 			<h1 class="header">Alexis D. Diaz Portfolio</h1>
 			<nav class="header menu">
 				<ul>
 					<li class="optionsMenu"> <a href="#work">My work</a> </li>
-					<li class="optionsMenu"> <a href="#contact">Contact</a> </li>
 					<li class="optionsMenu"> <a href="#about">About</a> </li>
+					<li class="optionsMenu"> <a href="#contact">Contact</a> </li>
 					<li class="optionsMenu"> <a href="#jokes">Nerd Jokes</a> </li>
 				</ul>
 			</nav>
 		</header>
 
 		<section>
-			<article id="about">
-				<h1 class="title">About me</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic.</p>
-			</article>
 
 			<article id="work">
 				<h1 class="title">My work</h1>
@@ -58,15 +51,31 @@
 				</div>
 			</article>
 
+			<article id="about">
+				<h1 class="title">About me</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic.</p>
+			</article>
+
 			<article id="contact">
 				<h1 class="title">Contact</h1>
-				<form action="">
-					<label for="name">Name: </label>
-					<input type="text" name="name" placeholder="Insert name"><br>
-					<label for="email">Email: </label>
-					<input type="email" name="email" placeholder="mail@domain.com"><br>
-					<textarea name="comments" id="" cols="30" rows="10" placeholder="Insert comments..."></textarea><br>
-					<input type="submit">
+				<form>
+					<div class="contenedor">
+						<div>
+							<label for="name">Name</label><br>
+							<input type="text" id="name" placeholder="Enter your name here">
+						</div>
+						<div>
+							<label for="email">Email</label><br>
+							<input type="email" id="email" placeholder="Enter your email here">
+						</div>
+						<div>
+							<label for="message">Message</label><br>
+							<textarea name="message" id="" cols="30" rows="10" placeholder="Place your message"></textarea>
+						</div>
+						<div>
+							<button type="submit">Submit</button>
+						</div>
+					</div>
 				</form>
 			</article>
 
