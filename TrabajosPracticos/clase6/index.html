@@ -12,41 +12,47 @@ Objetivo:
 	<head>
 		<title>Trabajo Practico Clase 6 - Github & Responsive Design</title>
 		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/estilos.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+		<!-- <link rel="stylesheet" type="text/css" href="main.css" />
+		<link id="size-stylesheet" rel="stylesheet" type="text/css" href="narrow.css" /> -->
+
 	</head>
 
 <body>
 
+	<header>
+		<h1 id="author" class="header">Alexis D. Diaz Portfolio</h1>
+		<nav class="header menu">
+			<ul>
+				<li class="optionsMenu"> <a href="#work">My work</a> </li>
+				<li class="optionsMenu"> <a href="#about">About</a> </li>
+				<li class="optionsMenu"> <a href="#contact">Contact</a> </li>
+				<li class="optionsMenu"> <a href="#jokes">Nerd Jokes</a> </li>
+			</ul>
+		</nav>
+	</header>
+
 	<div class="container">
-		<header>
-			<h1 class="header">Alexis D. Diaz Portfolio</h1>
-			<nav class="header menu">
-				<ul>
-					<li class="optionsMenu"> <a href="#work">My work</a> </li>
-					<li class="optionsMenu"> <a href="#about">About</a> </li>
-					<li class="optionsMenu"> <a href="#contact">Contact</a> </li>
-					<li class="optionsMenu"> <a href="#jokes">Nerd Jokes</a> </li>
-				</ul>
-			</nav>
-		</header>
-
+		
 		<section>
-
 			<article id="work">
 				<h1 class="title">My work</h1>
-				<div class="myWork">
-					<img src="img/web_design1.jpg" alt="web_design">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit labore rerum, minus numquam, iste nobis reiciendis voluptatum neque ab dolore ipsum ex nisi. Necessitatibus optio incidunt, modi ducimus delectus.</p>
-				</div>
-				<div class="myWork">
-					<img src="img/web_design2.jpg" alt="web_design">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
-				</div>
-				<div class="myWork">
-					<img src="img/web_design3.jpg" alt="web_design">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
+				<div class="workContainer">
+					<div class="myWork col-md-4">
+						<img src="img/web_design1.jpg" alt="web_design">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit labore rerum, minus numquam, iste nobis reiciendis voluptatum neque ab dolore ipsum ex nisi. Necessitatibus optio incidunt, modi ducimus delectus.</p>
+					</div>
+					<div class="myWork col-md-4">
+						<img src="img/web_design2.jpg" alt="web_design">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
+					</div>
+					<div class="myWork col-md-4">
+						<img src="img/web_design3.jpg" alt="web_design">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
+					</div>
 				</div>
 			</article>
 
@@ -58,7 +64,7 @@ Objetivo:
 			<article id="contact">
 				<h1 class="title">Contact</h1>
 				<form>
-					<div class="contenedor">
+					<div class="container">
 						<div>
 							<label for="name">Name</label><br>
 							<input type="text" id="name" placeholder="Enter your name here">
@@ -78,7 +84,6 @@ Objetivo:
 				</form>
 			</article>
 
-
 			<article id="jokes">
 				<h1 class="title">Some Nerd Jokes</h1>
 				<ul>
@@ -90,9 +95,11 @@ Objetivo:
 			<footer>
 				Redes sociales
 			</footer>
-
 		</section>
+
 	</div>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 
