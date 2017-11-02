@@ -1,0 +1,104 @@
+<!--
+	Descripción:
+
+		Es tiempo de comenzar a darle un poco de color y más forma a nuestro portafolio. Aprenderemos a aplicar selectores y clases en nuestro html de forma de poder referenciarlos para estilizarlos por medio de CSS. En este trabajo práctico, incorporaremos el uso de tipografía a nuestro portafolio, así cómo también las diferentes propiedades que tiene un texto.
+
+	Objetivo:
+
+		Incorporar en el archivo HTML, clases de forma de poder utilizarlas posteriormente en el estilo de estas.
+		Crear un archivo .css el cual comience a darle estilos a nuestro portafolio.
+		Poner en practica el uso de tipografías de uso abierto cómo lo son google fonts y font squirl.
+ -->
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Trabajo Practico Clase 3 - CSS Parte 1</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/estilos.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+	</head>
+
+<body>
+
+	<div>
+		<header>
+			<h1 class="header">Alexis D. Diaz Portfolio</h1>
+			<nav class="header menu">
+				<ul>
+					<li class="optionsMenu"> <a href="#work">My work</a> </li>
+					<li class="optionsMenu"> <a href="#contact">Contact</a> </li>
+					<li class="optionsMenu"> <a href="#about">About</a> </li>
+					<li class="optionsMenu"> <a href="#jokes">Nerd Jokes</a> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+
+			<article id="work">
+				<h1 class="title">My work</h1>
+				<div class="myWork">
+					<img src="img/web_design1.jpg" alt="web_design">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fugit labore rerum, minus numquam, iste nobis reiciendis voluptatum neque ab dolore ipsum ex nisi. Necessitatibus optio incidunt, modi ducimus delectus.</p>
+				</div>
+				<div class="myWork">
+					<img src="img/web_design2.jpg" alt="web_design">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
+				</div>
+				<div class="myWork">
+					<img src="img/web_design3.jpg" alt="web_design">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sit debitis, expedita a repudiandae ab harum labore reprehenderit temporibus, impedit quaerat aut, et voluptate veniam nostrum ex consequatur, deleniti sint.</p>
+				</div>
+			</article>
+
+			<div id="contact-container">
+				<article id="contact">
+					<h1 class="title">Contact</h1>
+					<form action="#" method="post">
+						<div class="form-element">
+							<label for="name">Name: </label>
+							<input type="text" name="name" placeholder="Insert name">
+						</div>
+						<div class="form-element">
+							<label for="email">Email: </label>
+							<input type="email" name="email" placeholder="mail@domain.com">
+						</div>
+						<div class="form-element">
+							<textarea name="comments" cols="30" rows="10" placeholder="Insert comments..."></textarea>
+						</div>
+						<input type="submit" value="Enviar">
+					</form>
+				</article>
+			</div>
+
+			<div id="about-container">
+				<article id="about">
+					<h1 class="title">About me</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic incidunt dolorum eius, delectus perspiciatis nihil facilis placeat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quisquam dicta fugiat. Eaque consequuntur, ea animi fuga repellendus velit architecto facere hic.</p>
+				</article>
+			</div>
+
+			<div id="jokes-container">
+				<article id="jokes">
+					<h1 class="title">Some Nerd Jokes</h1>
+					<ul>
+						<li> <a href="http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke" target="_blank">What is your best programmer joke?</a> </li>
+						<li> <a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered" target="_blank">What is the best comment in source code you have ever encountered?</a> </li>
+					</ul>
+				</article>
+			</div>
+
+			<footer>
+				Redes sociales
+			</footer>
+
+		</section>
+	</div>
+
+</body>
+
+</html>
