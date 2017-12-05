@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*	Las variables en SASS se denotan con el simbolo $.
+	Podemos definir variables booleanas, numericas, cadenas, listas y null, por ejemplo:
+	$sombreado : false;
+	$lineHeight : 2.5;
+	$fuentePrincipal : 'Helvetica Neue';
+	$margenDefault : 10px 10px 20px 20px;
+	$bordes : null;
+
+	Una propiedad importante de SASS es el anidamiento, que nos permite definir propiedades contenidas dentro de otras, ejemplo:
+
+	div #id {
+		border: $borde;
+		p {
+			color: blue;
+		}
+	}
+
+	Tambien tenemos algo llamado selectores padres, ejemplo:
+
+	.contenido {
+		border: 1px solid red;
+		padding: 10px;
+		a {
+			text-decoration: underline;
+		}
+		& p {
+			color: green;
+		}
+		Esto nos daria de resultado: .contenido p
+	}
+
+	Para compilar el codigo SASS, abrimos la linea de comando y accedemos al path donde esta el scss y ponemos:
+		@ sass archivo_sass archivo_css
+	En este caso ser├¡a:
+		@ sass index.scss index_generado.css
+
+*/
+.contenido {
+  background: red;
+  width: 960px; }
+  .contenido .tituloGrande, .contenido .tituloNoTanGrande {
+    font-size: 36px;
+    font-family: arial;
+    color: #222; }
+  .contenido .tituloNoTanGrande {
+    font-size: 24px; }
+  .contenido p {
+    font-style: "Helvetica Neue"; }
+  .contenido p:hover {
+    color: green; }
+  .contenido .boton_black {
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    background: black; }
+  .contenido .boton_blue {
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    background: blue; }
+  .contenido #footer {
+    border: 10px solid black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; }
+
+/*# sourceMappingURL=index_generado.css.map */

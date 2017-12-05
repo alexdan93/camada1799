@@ -1,0 +1,54 @@
+@import 'variables.scss';
+
+@mixin botones {
+	color: white;
+	width: 50px;
+	border-radius: 10px;
+}
+
+@mixin radios($grosor, $tipo, $color, $rad) {
+	border: $grosor $tipo $color;
+	border-radius: $rad;
+	-moz-border-radius: $rad;
+	-webkit-border-radius: $rad;
+}
+
+.contenido {
+	
+	background: $colorFondo;
+	width: $anchoPagina;
+
+	.tituloGrande {
+		font-size: 36px;
+		font-family: arial;
+		color: $colorTitulo;
+	}
+
+	.tituloNoTanGrande {
+		@extend .tituloGrande;
+		font-size: 24px;
+	}
+
+	p {
+		font-style: $fuentePrincipal;
+	}
+
+	& p:hover {
+		color: green;
+	}
+
+	.boton_black {
+		@include botones;
+		background: black;
+	}
+
+	.boton_blue {
+		@include botones;
+		background: blue;
+	}
+
+	#footer {
+		@include radios(10px, solid, black, 5px);
+	}
+
+}
