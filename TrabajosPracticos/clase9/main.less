@@ -1,0 +1,46 @@
+@color1: #4D926F;
+@color2: red;
+@ancho: 960px;
+
+.container {
+	background: gray;
+}
+
+/* Esta es una forma de usar extend */
+.boton:extend(.container){
+	border: 1px solid black;
+	color: white;
+}
+
+.boton-chico {
+	background: blue;
+	color: white;
+	width: 200px;
+}
+
+/* Y esta es otra forma de usar extend */
+.boton-grande {
+	&:extend(.boton-chico);
+	width: 400px;
+}
+
+/* Asi se usan los mixins, se puede poner un parametro por defecto */
+.radio(@rad: 5px) {
+	-webkit-border-radius: @rad;
+	-moz-border-radius: @rad;
+	-ms-border-radius: @rad;
+	-o-border-radius: @rad;
+	border-radius: @rad;
+}
+
+
+#header {
+	color: @color1;
+	width: @ancho;
+	.radio;
+}
+
+#footer {
+	border: 2px solid black;
+	.radio(10px);
+}
