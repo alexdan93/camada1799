@@ -1,0 +1,141 @@
+/*
+	Pictures from unsplash.com! Beautiful high quality free images and photos you can download and use for any project. No attribution required.
+	victoriano-izquierdo-109924.jpg - Photo by Victoriano Izquierdo on Unsplash
+	patrick-baum-194972.jpg - Photo by Patrick Baum on Unsplash
+	dan-calderwood-419654.jpg - Photo by Dan Calderwood on Unsplash
+	sebastien-408660.jpg - Photo by Sebastien on Unsplash
+	adam-jang-266829.jpg - Photo by Adam Jang on Unsplash
+	igor-ovsyannykov-165862.jpg - Photo by Igor Ovsyannykov on Unsplash
+	holly-mandarich-232349.jpg - Photo by Holly Mandarich on Unsplash
+	brian-kairuz-323251 - Photo by Brian Kairuz on Unsplash
+*/
+
+$mainColor: #633e23;
+$backgroundColor: #e5d5bb;
+$fontColor: #e5d5bb;
+
+body {
+	background-color: $backgroundColor;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.header {
+	height: 321px;
+	background-repeat: no-repeat;
+	background-image: url('img/header.png');
+}
+
+.main-menu {
+	height: 75px;
+	background-color: $mainColor;
+	ul {
+		vertical-align: middle;
+		li {
+			font-weight: bold;
+			margin: 15px;
+			display: inline-flex;
+			font-size: 30px;
+		}
+	}
+}
+
+#mi-carousel {
+	height: 400px;
+	img {
+		height: 400px;
+	}
+}
+
+.sec-menu {
+	@extend .main-menu;
+	height: 50px;
+	ul {
+		li {
+			font-size: 20px;
+			font-weight: normal;
+		}
+	}
+}
+
+.gallery {
+	margin-top: 40px;
+	.portrait {
+		display: inline-flex;
+		img {
+			height: 180px;
+			margin: 5px;
+		}
+	}
+}
+
+.new-container {
+	border: 1px solid black;
+	margin: 20px;
+	background-color: red;
+}
+
+.footer {
+	@extend .main-menu;
+	background: linear-gradient(black, $mainColor);
+	color: $fontColor;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	.contenedor {
+		width: 80%;
+		border: 2px solid black;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		.footer-element {
+			width: 30%;
+			display: inline-flex;
+			flex-direction: column;
+			text-align: center;
+		}
+		.copyright {
+			font-weight: bold;
+		}
+		.social {
+			.icons {
+				flex-direction: row;
+				img {
+					margin: 5px;
+					border-radius: 10%;
+					height: 50px;
+					width: 50px;
+				}
+			}
+			font-size: 24px;
+		}
+		.subscribe {
+			flex-direction: column;
+			span {
+				font-size: 24px;
+				text-align: left;
+			}
+			input[type='text'] {
+				background-color: $backgroundColor;
+				width: 250px;
+				border: 1px solid #d28e0f;
+				margin-bottom: 10px;
+			}
+			input[type='submit'] {
+				color: $fontColor;
+				background-color: #d28e0f;
+				width: 60px;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,107 @@
+/*
+	Pictures from unsplash.com! Beautiful high quality free images and photos you can download and use for any project. No attribution required.
+	victoriano-izquierdo-109924.jpg - Photo by Victoriano Izquierdo on Unsplash
+	patrick-baum-194972.jpg - Photo by Patrick Baum on Unsplash
+	dan-calderwood-419654.jpg - Photo by Dan Calderwood on Unsplash
+	sebastien-408660.jpg - Photo by Sebastien on Unsplash
+	adam-jang-266829.jpg - Photo by Adam Jang on Unsplash
+	igor-ovsyannykov-165862.jpg - Photo by Igor Ovsyannykov on Unsplash
+	holly-mandarich-232349.jpg - Photo by Holly Mandarich on Unsplash
+	brian-kairuz-323251 - Photo by Brian Kairuz on Unsplash
+*/
+body {
+  background-color: #e5d5bb; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  text-decoration: none;
+  color: white; }
+
+.header {
+  height: 321px;
+  background-repeat: no-repeat;
+  background-image: url("img/header.png"); }
+
+.main-menu, .sec-menu, .footer {
+  height: 75px;
+  background-color: #633e23; }
+  .main-menu ul, .sec-menu ul, .footer ul {
+    vertical-align: middle; }
+    .main-menu ul li, .sec-menu ul li, .footer ul li {
+      font-weight: bold;
+      margin: 15px;
+      display: inline-flex;
+      font-size: 30px; }
+
+#mi-carousel {
+  height: 400px; }
+  #mi-carousel img {
+    height: 400px; }
+
+.sec-menu {
+  height: 50px; }
+  .sec-menu ul li {
+    font-size: 20px;
+    font-weight: normal; }
+
+.gallery {
+  margin-top: 40px; }
+  .gallery .portrait {
+    display: inline-flex; }
+    .gallery .portrait img {
+      height: 180px;
+      margin: 5px; }
+
+.new-container {
+  border: 1px solid black;
+  margin: 20px;
+  background-color: red; }
+
+.footer {
+  background: linear-gradient(black, #633e23);
+  color: #e5d5bb;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .footer .contenedor {
+    width: 80%;
+    border: 2px solid black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .contenedor .footer-element {
+      width: 30%;
+      display: inline-flex;
+      flex-direction: column;
+      text-align: center; }
+    .footer .contenedor .copyright {
+      font-weight: bold; }
+    .footer .contenedor .social {
+      font-size: 24px; }
+      .footer .contenedor .social .icons {
+        flex-direction: row; }
+        .footer .contenedor .social .icons img {
+          margin: 5px;
+          border-radius: 10%;
+          height: 50px;
+          width: 50px; }
+    .footer .contenedor .subscribe {
+      flex-direction: column; }
+      .footer .contenedor .subscribe span {
+        font-size: 24px;
+        text-align: left; }
+      .footer .contenedor .subscribe input[type='text'] {
+        background-color: #e5d5bb;
+        width: 250px;
+        border: 1px solid #d28e0f;
+        margin-bottom: 10px; }
+      .footer .contenedor .subscribe input[type='submit'] {
+        color: #e5d5bb;
+        background-color: #d28e0f;
+        width: 60px; }
+
+/*# sourceMappingURL=estilos.css.map */
