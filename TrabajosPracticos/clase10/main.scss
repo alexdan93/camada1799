@@ -13,6 +13,7 @@
 $mainColor: #633e23;
 $backgroundColor: #e5d5bb;
 $fontColor: #e5d5bb;
+$orange: #d28e0f;
 
 body {
 	background-color: $backgroundColor;
@@ -44,6 +45,12 @@ a:hover {
 			margin: 15px;
 			display: inline-flex;
 			font-size: 30px;
+			a {
+				color: $fontColor;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -55,32 +62,132 @@ a:hover {
 	}
 }
 
-.sec-menu {
-	@extend .main-menu;
-	height: 50px;
-	ul {
-		li {
-			font-size: 20px;
-			font-weight: normal;
+.sec-menu { /* TODO: Use the extend property from sass on main-menu -> @extend .main-menu */
+	background-color: $mainColor;
+	.sec-text {
+		height: 50px;
+		ul {
+			vertical-align: middle;
+			li {
+				margin: 15px;
+				display: inline-flex;
+				font-size: 20px;
+				font-weight: normal;
+				a {
+					color: $fontColor;
+				}
+			}
 		}
 	}
 }
 
+.separator {
+	height: 5px;
+	background-color: $orange;
+}
+
 .gallery {
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	/*background: linear-gradient($backgroundColor, #d2ba98);*/
 	.portrait {
 		display: inline-flex;
 		img {
 			height: 180px;
 			margin: 5px;
+			opacity: 0.6;
+		}
+		img:hover {
+			opacity: 1;
 		}
 	}
 }
 
-.new-container {
-	border: 1px solid black;
-	margin: 20px;
-	background-color: red;
+.main-content {
+	display: inline-flex;
+	justify-content: center;
+	margin-bottom: 10px;
+
+	.vertical-gallery-container {
+		border: 1px solid $mainColor;
+		width: 20%;
+		margin: 5px;
+		.headline {
+			text-align: right;
+			background-color: $mainColor;
+			.title {
+				color: white;
+				font-weight: bold;
+				font-size: 34px;
+			}
+			.plus {
+				color: $orange;
+				font-size: 34px;
+				font-weight: bold;
+				margin-right: 15px;
+			}
+		}
+		.imgs-container {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 15px;
+			img {
+				margin-left: 25px;
+				margin-top: 10px;
+				height: 240px;
+				width: 330px;
+			}
+		}
+	}
+
+	.news-container {
+		width: 35%;
+		.column-content {
+			border: 1px solid $mainColor;
+			margin: 5px;
+			.new-container {
+				.headline {
+					text-align: right;
+					background-color: $mainColor;
+					.title {
+						color: white;
+						font-weight: bold;
+						font-size: 34px;
+					}
+					.plus {
+						color: $orange;
+						font-size: 34px;
+						font-weight: bold;
+						margin-right: 15px;
+					}
+				}
+				.content {
+					.new-title {
+						color: $mainColor;
+						font-size: 28px;
+						font-weight: bold;
+					}
+					.new-content {
+						color: black;
+						font-size: 20px;
+					}
+				}
+			}
+			.mini-news-container {
+				@extend .new-container;
+				display: inline-flex;
+				justify-content: center;
+				margin-left: 20px;
+				.mini-new {
+					margin: 5px;
+				}
+				img {
+					height: 150px;
+					width: 190px;
+				}
+			}
+		}
+	}
 }
 
 .footer {
@@ -93,7 +200,6 @@ a:hover {
 	justify-content: center;
 	.contenedor {
 		width: 80%;
-		border: 2px solid black;
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
@@ -120,19 +226,26 @@ a:hover {
 		}
 		.subscribe {
 			flex-direction: column;
-			span {
-				font-size: 24px;
+			#subs {
+				font-size: 18px;
+				text-align: left;
+			}
+			#email {
+				font-size: 21px;
 				text-align: left;
 			}
 			input[type='text'] {
 				background-color: $backgroundColor;
 				width: 250px;
-				border: 1px solid #d28e0f;
+				border: 1px solid $orange;
 				margin-bottom: 10px;
+				height: 35px;
+				color: $mainColor;
+				font-size: 24px;
 			}
 			input[type='submit'] {
 				color: $fontColor;
-				background-color: #d28e0f;
+				background-color: $orange;
 				width: 60px;
 			}
 		}

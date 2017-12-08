@@ -25,16 +25,20 @@ a:hover {
   background-repeat: no-repeat;
   background-image: url("img/header.png"); }
 
-.main-menu, .sec-menu, .footer {
+.main-menu, .footer {
   height: 75px;
   background-color: #633e23; }
-  .main-menu ul, .sec-menu ul, .footer ul {
+  .main-menu ul, .footer ul {
     vertical-align: middle; }
-    .main-menu ul li, .sec-menu ul li, .footer ul li {
+    .main-menu ul li, .footer ul li {
       font-weight: bold;
       margin: 15px;
       display: inline-flex;
       font-size: 30px; }
+      .main-menu ul li a, .footer ul li a {
+        color: #e5d5bb; }
+      .main-menu ul li a:hover, .footer ul li a:hover {
+        text-decoration: underline; }
 
 #mi-carousel {
   height: 400px; }
@@ -42,23 +46,99 @@ a:hover {
     height: 400px; }
 
 .sec-menu {
-  height: 50px; }
-  .sec-menu ul li {
-    font-size: 20px;
-    font-weight: normal; }
+  /* TODO: Use the extend property from sass on main-menu -> @extend .main-menu */
+  background-color: #633e23; }
+  .sec-menu .sec-text {
+    height: 50px; }
+    .sec-menu .sec-text ul {
+      vertical-align: middle; }
+      .sec-menu .sec-text ul li {
+        margin: 15px;
+        display: inline-flex;
+        font-size: 20px;
+        font-weight: normal; }
+        .sec-menu .sec-text ul li a {
+          color: #e5d5bb; }
+
+.separator {
+  height: 5px;
+  background-color: #d28e0f; }
 
 .gallery {
-  margin-top: 40px; }
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /*background: linear-gradient($backgroundColor, #d2ba98);*/ }
   .gallery .portrait {
     display: inline-flex; }
     .gallery .portrait img {
       height: 180px;
-      margin: 5px; }
+      margin: 5px;
+      opacity: 0.6; }
+    .gallery .portrait img:hover {
+      opacity: 1; }
 
-.new-container {
-  border: 1px solid black;
-  margin: 20px;
-  background-color: red; }
+.main-content {
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 10px; }
+  .main-content .vertical-gallery-container {
+    border: 1px solid #633e23;
+    width: 20%;
+    margin: 5px; }
+    .main-content .vertical-gallery-container .headline {
+      text-align: right;
+      background-color: #633e23; }
+      .main-content .vertical-gallery-container .headline .title {
+        color: white;
+        font-weight: bold;
+        font-size: 34px; }
+      .main-content .vertical-gallery-container .headline .plus {
+        color: #d28e0f;
+        font-size: 34px;
+        font-weight: bold;
+        margin-right: 15px; }
+    .main-content .vertical-gallery-container .imgs-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px; }
+      .main-content .vertical-gallery-container .imgs-container img {
+        margin-left: 25px;
+        margin-top: 10px;
+        height: 240px;
+        width: 330px; }
+  .main-content .news-container {
+    width: 35%; }
+    .main-content .news-container .column-content {
+      border: 1px solid #633e23;
+      margin: 5px; }
+      .main-content .news-container .column-content .new-container .headline, .main-content .news-container .column-content .mini-news-container .headline {
+        text-align: right;
+        background-color: #633e23; }
+        .main-content .news-container .column-content .new-container .headline .title, .main-content .news-container .column-content .mini-news-container .headline .title {
+          color: white;
+          font-weight: bold;
+          font-size: 34px; }
+        .main-content .news-container .column-content .new-container .headline .plus, .main-content .news-container .column-content .mini-news-container .headline .plus {
+          color: #d28e0f;
+          font-size: 34px;
+          font-weight: bold;
+          margin-right: 15px; }
+      .main-content .news-container .column-content .new-container .content .new-title, .main-content .news-container .column-content .mini-news-container .content .new-title {
+        color: #633e23;
+        font-size: 28px;
+        font-weight: bold; }
+      .main-content .news-container .column-content .new-container .content .new-content, .main-content .news-container .column-content .mini-news-container .content .new-content {
+        color: black;
+        font-size: 20px; }
+      .main-content .news-container .column-content .mini-news-container {
+        display: inline-flex;
+        justify-content: center;
+        margin-left: 20px; }
+        .main-content .news-container .column-content .mini-news-container .mini-new {
+          margin: 5px; }
+        .main-content .news-container .column-content .mini-news-container img {
+          height: 150px;
+          width: 190px; }
 
 .footer {
   background: linear-gradient(black, #633e23);
@@ -69,7 +149,6 @@ a:hover {
   justify-content: center; }
   .footer .contenedor {
     width: 80%;
-    border: 2px solid black;
     display: inline-flex;
     justify-content: center;
     align-items: center; }
@@ -91,14 +170,20 @@ a:hover {
           width: 50px; }
     .footer .contenedor .subscribe {
       flex-direction: column; }
-      .footer .contenedor .subscribe span {
-        font-size: 24px;
+      .footer .contenedor .subscribe #subs {
+        font-size: 18px;
+        text-align: left; }
+      .footer .contenedor .subscribe #email {
+        font-size: 21px;
         text-align: left; }
       .footer .contenedor .subscribe input[type='text'] {
         background-color: #e5d5bb;
         width: 250px;
         border: 1px solid #d28e0f;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        height: 35px;
+        color: #633e23;
+        font-size: 24px; }
       .footer .contenedor .subscribe input[type='submit'] {
         color: #e5d5bb;
         background-color: #d28e0f;
