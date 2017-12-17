@@ -1,0 +1,105 @@
+body {
+	font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+.page-button {
+	background-color: #D9B434;
+	border-radius: 5px;
+	padding: 10px 30px;
+	width: 250px;
+	height: 60px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#clients {
+	background-color: #FAFBFC;
+	display: flex;
+	justify-content: space-around;
+	height: 200px;
+}
+
+#contact {
+	height: 780px;
+	background-image: url('img/map-image.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #212529;
+	.container-fluid {
+		padding-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		div {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			h1, h4 {
+				color: white;
+			}
+		}
+		.input-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			margin: 15px;
+			div {
+				input {
+					background-color: white;
+					height: 70px;
+					width: 600px;
+					border-radius: 5px;
+					margin: 10px;
+				}
+			}
+			#input-column {
+				display: flex;
+				flex-direction: column;
+			}
+			#input-big input {
+				height: 250px;
+			}
+		}
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	heigth: 150px;
+	div {
+		display: flex;
+		i {
+			color: white;
+			background: black;
+			width: 30px;
+			height: 30px;
+			font-size: 30px;
+			border-radius: 50%;
+			line-heigth: 30px;
+		}
+		a {
+			color: #F5C318;
+		}
+	}
+	div * {
+		margin: 5px;
+	}
+}
