@@ -26,6 +26,65 @@ a:focus {
 	font-size: 18px;
 }
 
+/*************************************************************************************************************************/
+
+#mainNav {
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	align-items: center;
+	justify-items: center;
+	z-index: 10;
+	span {
+		color: #D9B434;
+		font-size: 30px;
+	}
+	.buttons {
+		ul {
+			display: flex;
+			li {
+				margin: 10px;
+				list-style: none;
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+/*************************************************************************************************************************/
+
+#header {
+	background-image: url('img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 1400px;
+	background-position: 0px -280px;
+	height: 850px;
+	position: relative;
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 300px;
+		h1 {
+			color: white;
+			letter-spacing: 5px;
+			font-size: 81px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		h2 {
+			font-size: 42px;
+			color: white;
+			font-style: italic;
+		}
+	}
+}
+
+/*************************************************************************************************************************/
+
 #clients {
 	background-color: #FAFBFC;
 	display: flex;
@@ -33,8 +92,10 @@ a:focus {
 	height: 200px;
 }
 
+/*************************************************************************************************************************/
+
 #contact {
-	height: 780px;
+	height: 960px;
 	background-image: url('img/map-image.png');
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -80,6 +141,8 @@ a:focus {
 	}
 }
 
+/*************************************************************************************************************************/
+
 footer {
 	display: flex;
 	justify-content: space-around;
@@ -103,3 +166,5 @@ footer {
 		margin: 5px;
 	}
 }
+
+/*************************************************************************************************************************/
